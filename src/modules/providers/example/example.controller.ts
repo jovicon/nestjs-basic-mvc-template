@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('/naruto')
-  getHello(): { ping: string } {
+  getHello(): Promise<{ ping: string }> {
     return this.appService.getHealthCheck();
   }
 }

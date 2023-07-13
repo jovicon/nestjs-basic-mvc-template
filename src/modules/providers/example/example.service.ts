@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { HttpService as Axios } from '@nestjs/axios';
-import { map } from 'rxjs/operators';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable()
